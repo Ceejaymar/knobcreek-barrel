@@ -1,0 +1,32 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #1E1E1E;
+$color-tan-dark: #b5a484;
+$color-tan-white: #f3f1ed;
+$color-red: #bd3131;
+
+
+$screen-large: 62.5em; //   1000px
+$screen-medium: 37.5em; //  600px
+$screen-small: 20em; //     320px
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10 / 16 = .625, for rems
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}

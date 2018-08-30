@@ -1,0 +1,24 @@
+.headercard {
+  display: flex;
+  height: 100%;
+
+  &__img,
+  &__content {
+    width: 50%
+  }
+
+  &__img {
+    background-color: $color-white;
+    background-image: url(../_assets/photography/pour-mug.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+  }
+}
