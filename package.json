@@ -8,9 +8,22 @@
     "react-scripts": "1.1.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/style.comp.css -o src/css/style.css",
+    "start": "npm-run-all --parallel start-js watch:sass",
+    "build": "npm-run-all compile:sass prefix:css build-js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0",
+    "sass-loader": "^7.1.0"
   }
 }
