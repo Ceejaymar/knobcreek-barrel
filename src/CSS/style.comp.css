@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E1E1E;
+  color: #b5a484; }
+  .footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 17rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    text-transform: uppercase; }
+  .footer__social-link img {
+    height: 2.5rem; }
+
+.header {
+  height: 100vh;
+  background-image: url("../_assets/photography/kc-gathering.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.sub-section {
+  height: 40vh;
+  background-color: #b5a484;
+  display: flex;
+  justify-content: center; }
+
+.headercard__img {
+  height: 60vh; }
+
+.navbar-container {
+  display: flex;
+  flex-direction: column; }
+
+.header-container {
+  height: 140vh;
+  background-color: #bd3131; }
+
+.headercard-section {
+  width: 90%;
+  height: 60vh;
+  background-color: #bd3131; }
+
+.cardcontainer-section {
+  height: 100vh; }
+
+.footer-container {
+  display: flex;
+  flex-direction: column; }
+
+.sponsored {
+  background-color: #b5a484;
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.3rem;
+  text-transform: capitalize; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E1E1E;
+  padding: 2rem 5rem; }
+  .navbar__brand {
+    height: 4rem; }
+  .navbar__logo-box {
+    border: 2px solid #b5a484;
+    padding: .5rem 1.5rem; }
+  .navbar__logo {
+    color: #b5a484;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem; }
+  .navbar__social {
+    display: flex;
+    justify-content: space-around;
+    width: 7.6rem; }
+  .navbar__social-link img {
+    height: 2.5rem; }
