@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba($color-black, .30), transparent), url('../_assets/photography/kc-gathering.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-red;
+  color: $color-white;
+
+  &__content {
+    display: flex;
+    height: 50rem;
+    background-color: $color-red;
+    width: 80%;
+  }
+
+  &__text {
+    max-width: 50rem;
+    padding-bottom: 25rem;
+  }
+
+  &__title {
+    font-size: 7rem;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  
+  &__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    line-height: 2.5rem;
+    width: 95%;
+  }
+
+  &__img {
+    height: 80rem;
+  }
+}
+

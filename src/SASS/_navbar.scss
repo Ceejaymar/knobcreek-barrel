@@ -1,0 +1,47 @@
+.sponsored {
+  background-color: $color-tan-dark;
+  text-align: center;
+  padding: .5rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-gray;
+  padding: 2rem 5rem;
+
+  &__brand {
+    height: 4rem;
+  }
+
+  &__logo-box {
+    border: 2px solid $color-tan-dark;
+    padding: .5rem 1.5rem;
+  }
+
+  &__logo {
+    color: $color-tan-dark;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    width: 7.6rem;
+  }
+  
+  &__social-link img {
+    // fill: $color-tan-dark;
+    // color: $color-tan-dark;
+    // stroke: white;
+    // background-color: white;
+    height: 2.5rem;
+  }
+
+}

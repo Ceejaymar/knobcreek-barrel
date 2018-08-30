@@ -1,0 +1,36 @@
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  // position: fixed;
+}
+
+.header-container {
+  height: 140vh;
+}
+
+.sub-section {
+  height: 40vh;
+  background-color: $color-tan-dark;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headercard-section {
+  position: absolute;
+  top: -30rem;
+  width: 90%;
+  height: 60vh;
+  background-color: $color-red;
+}
+
+.cardcontainer-section {
+  height: 100vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
