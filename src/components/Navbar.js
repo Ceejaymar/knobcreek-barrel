@@ -13,10 +13,8 @@ const Navbar = () => {
           <div className="navbar__logo">logo</div>
         </div>
         <div className="navbar__social">
-        {/* <img className="navbar__social-link" src={facebook} alt="social link"/> */}
-        {/* <img className="navbar__social-link" src={twitter} alt="social link"/> */}
-          <a href="#" className="navbar__social-link"><img src={facebook} alt="facebook"/></a>
-          <a href="#" className="navbar__social-link"><img src={twitter} alt="twitter"/></a>
+          <a href="https://www.facebook.com/KnobCreek/" target="_blank" className="navbar__social-link"><img src={facebook} alt="facebook"/></a>
+          <a href="https://twitter.com/knobcreek" target="_blank" className="navbar__social-link"><img src={twitter} alt="twitter"/></a>
         </div>
       </nav>
     </div>
