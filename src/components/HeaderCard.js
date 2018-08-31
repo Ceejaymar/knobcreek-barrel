@@ -1,17 +1,20 @@
 import React from 'react';
+import Article from '../_assets/iconography/Article.svg';
+// import Article from '-!svg-react-loader!./Article.svg';
 
 const HeaderCard  = () => {
   return (
     <div className="headercard-section">
       <div className="headercard">
-        {/* <img className="headercard__img" src={require("../_assets/photography/pour-mug.jpg")} alt="pouring into mug"/> */}
         <div className="headercard__img"></div>
         <div className="headercard__content">
-          <img src="" alt=""/>
-          <p>this is more content</p>
-          <h2></h2>
-          <p>There are so many hours in a day, so we make every glass count. We craft full-flavored whiskey for those who find a way to get the most out of every minute of the day...</p>
-          <p className="cta">read more</p>
+          <div className="headercard__text-content">
+            <img className="headercard__icon" src={Article} alt="article"/>
+            <p className="headercard__date">November 20</p>
+            <h2 className="headercard__title">Too much flavor for our four walls to hold</h2>
+            <p className="headercard__paragraph">There are so many hours in a day, so we make every glass count. We craft full-flavored whiskey for those who find a way to get the most out of every minute of the day...</p>
+            <p className="cta">read more</p>
+          </div>
         </div>
       </div>
     </div>

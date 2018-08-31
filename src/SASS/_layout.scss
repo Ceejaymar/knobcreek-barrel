@@ -21,11 +21,12 @@
   top: -30rem;
   width: 90%;
   height: 60vh;
-  background-color: $color-red;
+  background-color: $color-red-light;
 }
 
-.cardcontainer-section {
-  height: 100vh;
+.cards-section {
+  // height: 100vh;
+  padding: 0 9rem;
 }
 
 .footer-container {

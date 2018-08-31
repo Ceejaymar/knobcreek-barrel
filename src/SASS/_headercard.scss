@@ -21,4 +21,50 @@
     align-items: center;
     background-color: $color-white;
   }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    fill: $color-red-light;
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  &__paragraph {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: 300;
+  }
+
+  .cta {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $color-red-light;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-red-dark;
+    }
+  }
 }

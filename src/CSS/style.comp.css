@@ -14,6 +14,10 @@ html {
 body {
   font-family: 'Open Sans', sans-serif; }
 
+.card-container__title {
+  font-size: 3.5rem;
+  text-transform: capitalize; }
+
 .footer {
   padding: 2rem;
   display: flex;
@@ -34,34 +38,107 @@ body {
     height: 2.5rem; }
 
 .header {
-  height: 100vh;
-  background-image: url("../_assets/photography/kc-gathering.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.sub-section {
-  height: 40vh;
-  background-color: #b5a484;
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent), url("../_assets/photography/kc-gathering.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #bd3131;
+  color: #ffffff; }
+  .header__content {
+    display: flex;
+    height: 50rem;
+    background-color: #bd3131;
+    width: 80%; }
+  .header__text {
+    max-width: 50rem;
+    padding-bottom: 25rem; }
+  .header__title {
+    font-size: 7rem;
+    font-weight: 300;
+    text-transform: capitalize; }
+  .header__paragraph {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    line-height: 2.5rem;
+    width: 95%; }
+  .header__img {
+    height: 80rem; }
 
-.headercard__img {
-  height: 60vh; }
+.headercard {
+  display: flex;
+  height: 100%; }
+  .headercard__img, .headercard__content {
+    width: 50%; }
+  .headercard__img {
+    background-color: #ffffff;
+    background-image: url(../_assets/photography/pour-mug.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .headercard__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; }
+  .headercard__text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 60%; }
+  .headercard__icon {
+    height: 2.5rem;
+    fill: #bd3131; }
+  .headercard__date {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem; }
+  .headercard__title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center; }
+  .headercard__paragraph {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: 300; }
+  .headercard .cta {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #bd3131; }
+    .headercard .cta:hover {
+      cursor: pointer;
+      color: #932525; }
 
 .navbar-container {
   display: flex;
   flex-direction: column; }
 
 .header-container {
-  height: 140vh;
-  background-color: #bd3131; }
+  height: 140vh; }
+
+.sub-section {
+  height: 40vh;
+  background-color: #b5a484;
+  display: flex;
+  justify-content: center;
+  position: relative; }
 
 .headercard-section {
+  position: absolute;
+  top: -30rem;
   width: 90%;
   height: 60vh;
   background-color: #bd3131; }
 
-.cardcontainer-section {
+.card-container-section {
   height: 100vh; }
 
 .footer-container {
