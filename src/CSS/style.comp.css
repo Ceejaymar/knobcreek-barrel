@@ -10,13 +10,94 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 35%; } }
+  @media only screen and (max-width: 20em) {
+    html {
+      font-size: 30%; } }
 
 body {
   font-family: 'Open Sans', sans-serif; }
 
-.card-container__title {
-  font-size: 3.5rem;
-  text-transform: capitalize; }
+.card {
+  width: 31%;
+  margin-bottom: 6rem; }
+  .card:hover,
+  .card:hover > .card__content,
+  .card:hover > .card__content > .card__icon-circle {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      width: 47%;
+      margin-bottom: 4rem; } }
+  .card__img:hover {
+    background-image: black !important; }
+  @media only screen and (max-width: 81.25em) {
+    .card__img {
+      background-size: cover !important; } }
+  @media only screen and (max-width: 62.5em) {
+    .card__img {
+      height: 35rem !important; } }
+  @media only screen and (max-width: 50em) {
+    .card__img {
+      height: 25rem !important; } }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25rem;
+    background-color: #f3f1ed;
+    padding: 2rem 4rem 1.5rem 4rem;
+    position: relative;
+    transition: .3s ease-out; }
+    @media only screen and (max-width: 81.25em) {
+      .card__content {
+        padding: 3rem 2rem 1.5rem 2rem; } }
+    @media only screen and (max-width: 50em) {
+      .card__content {
+        height: 20rem; } }
+  .card__icon-circle {
+    background-color: #f3f1ed;
+    padding: 1.5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: -2.5rem;
+    transition: .3s ease-out; }
+  .card__icon {
+    height: 2.5rem;
+    fill: #bd3131; }
+  .card__date {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem; }
+  .card__title {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center; }
+  .card .cta {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #bd3131; }
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .cards__title {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+    padding: 3rem 0; }
 
 .footer {
   padding: 2rem;
@@ -41,38 +122,72 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent), url("../_assets/photography/kc-gathering.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #bd3131;
   color: #ffffff; }
-  .header__content {
-    display: flex;
-    height: 50rem;
-    background-color: #bd3131;
-    width: 80%; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      flex-direction: column; } }
   .header__text {
     max-width: 50rem;
     padding-bottom: 25rem; }
+    @media only screen and (max-width: 62.5em) {
+      .header__text {
+        width: 40%;
+        padding-bottom: 20rem; } }
+    @media only screen and (max-width: 50em) {
+      .header__text {
+        padding-bottom: 15rem; } }
+    @media only screen and (max-width: 50em) {
+      .header__text {
+        width: 60%;
+        padding-top: 5rem;
+        padding-bottom: 2rem; } }
   .header__title {
     font-size: 7rem;
     font-weight: 300;
     text-transform: capitalize; }
+    @media only screen and (max-width: 50em) {
+      .header__title {
+        font-size: 5rem; } }
   .header__paragraph {
     font-size: 1.6rem;
     font-weight: 300;
     letter-spacing: .1rem;
     line-height: 2.5rem;
     width: 95%; }
+    @media only screen and (max-width: 37.5em) {
+      .header__paragraph {
+        line-height: 1.7rem; } }
   .header__img {
     height: 80rem; }
+    @media only screen and (max-width: 62.5em) {
+      .header__img {
+        height: 60rem; } }
+    @media only screen and (max-width: 50em) {
+      .header__img {
+        height: 50rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__img {
+        height: 40rem; } }
 
 .headercard {
   display: flex;
   height: 100%; }
+  .headercard:hover {
+    cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .headercard {
+      flex-direction: column; } }
+  .headercard:hover .cta {
+    color: #932525; }
   .headercard__img, .headercard__content {
     width: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .headercard__img, .headercard__content {
+        height: 50%;
+        width: 100%; } }
   .headercard__img {
     background-color: #ffffff;
     background-image: url(../_assets/photography/pour-mug.jpg);
@@ -99,7 +214,7 @@ body {
     text-transform: uppercase;
     letter-spacing: .2rem; }
   .headercard__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 400;
     text-transform: capitalize;
     text-align: center; }
@@ -112,17 +227,21 @@ body {
     font-weight: 600;
     font-size: 1.6rem;
     text-transform: capitalize;
-    color: #bd3131; }
-    .headercard .cta:hover {
-      cursor: pointer;
-      color: #932525; }
+    color: #bd3131;
+    transition: .3s ease-out; }
 
 .navbar-container {
   display: flex;
   flex-direction: column; }
 
 .header-container {
-  height: 140vh; }
+  height: 120vh; }
+  @media only screen and (max-width: 62.5em) {
+    .header-container {
+      height: 90vh; } }
+  @media only screen and (max-width: 50em) {
+    .header-container {
+      height: 60vh; } }
 
 .sub-section {
   height: 40vh;
@@ -130,16 +249,52 @@ body {
   display: flex;
   justify-content: center;
   position: relative; }
+  @media only screen and (max-width: 62.5em) {
+    .sub-section {
+      height: 30vh; } }
+  @media only screen and (max-width: 50em) {
+    .sub-section {
+      height: 20vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .sub-section {
+      height: 25vh; } }
 
 .headercard-section {
   position: absolute;
   top: -30rem;
   width: 90%;
-  height: 60vh;
-  background-color: #bd3131; }
+  height: 60vh; }
+  @media only screen and (max-width: 62.5em) {
+    .headercard-section {
+      height: 40vh;
+      top: -20rem; } }
+  @media only screen and (max-width: 50em) {
+    .headercard-section {
+      height: 30vh;
+      top: -15rem; } }
+  @media only screen and (max-width: 50em) {
+    .headercard-section {
+      height: 30vh;
+      width: 75%; } }
+  @media only screen and (max-width: 37.5em) {
+    .headercard-section {
+      height: 35vh;
+      width: 75%; } }
 
-.card-container-section {
-  height: 100vh; }
+.cards-section {
+  padding: 5rem 9rem; }
+  @media only screen and (max-width: 81.25em) {
+    .cards-section {
+      padding: 4rem 4rem; } }
+  @media only screen and (max-width: 62.5em) {
+    .cards-section {
+      padding: 0 4rem; } }
+  @media only screen and (max-width: 50em) {
+    .cards-section {
+      padding: 7rem 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .cards-section {
+      padding: 25rem 4rem 4rem 4rem; } }
 
 .footer-container {
   display: flex;
