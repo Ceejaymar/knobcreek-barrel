@@ -1,0 +1,53 @@
+.card {
+  width: 31%;
+  margin-bottom: 6rem;
+  
+  &__img {
+    // height: 45rem;
+    // background-position: 
+
+    @media only screen and (max-width: 1000px) {
+      background-size: cover !important;
+    } 
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25rem;
+    background-color: $color-tan-light;
+    padding: 0 4rem 1.5rem 4rem;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    fill: $color-red-light;
+  }
+
+  &__date {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .cta {
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $color-red-light;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-red-dark;
+    }
+  }
+}
