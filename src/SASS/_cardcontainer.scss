@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__title {
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+    padding: 3rem 0;
+  } 
+}
