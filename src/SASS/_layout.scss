@@ -1,7 +1,6 @@
 .navbar-container {
   display: flex;
   flex-direction: column;
-  // position: fixed;
 }
 
 .header-container {
@@ -64,7 +63,6 @@
   @media only screen and (max-width: $screen-small) {
     height: 35vh;
     width: 75%;
-    // top: -10rem;
   } 
 }
 
@@ -80,11 +78,15 @@
   }
 
   @media only screen and (max-width: $screen-medium) {
-    padding: 7rem 4rem;
+    padding: 7rem 2rem;
   }
 
   @media only screen and (max-width: $screen-small) {
-    padding: 25rem 4rem 4rem 4rem;
+    padding: 25rem 2rem 4rem 2rem;
+  }
+
+  @media only screen and (max-width: $screen-small) {
+    padding: 45rem 2rem 4rem 2rem;
   } 
 }
 

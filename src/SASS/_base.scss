@@ -28,15 +28,15 @@ html {
   font-size: 62.5%; // 10 / 16 = .625, for rems
 
   @media only screen and (max-width: $screen-large) {
-    font-size: 50%;
+    font-size: 50% !important;
   }
 
   @media only screen and (max-width: $screen-medium) {
-    font-size: 35%;
+    font-size: 35% !important;
   }
 
   @media only screen and (max-width: $screen-smallest) {
-    font-size: 30%;
+    font-size: 25% !important;
   } 
 }
 

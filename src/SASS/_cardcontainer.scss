@@ -3,6 +3,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media only screen and (max-width: $screen-small) {
+    // align-items: center;
+    justify-content: center;
+  } 
+
   &__title {
     font-size: 3.5rem;
     text-transform: capitalize;

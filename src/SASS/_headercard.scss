@@ -19,7 +19,7 @@
     width: 50%;
 
     @media only screen and (max-width: $screen-small) {
-      height: 50%;
+      height: 60%;
       width: 100%;
     } 
   }
@@ -46,11 +46,24 @@
     align-items: center;
     width: 60%;
     height: 60%;
+
+    @media only screen and (max-width: $screen-small) {
+      height: 80%;
+      width: 100%;
+    } 
+    @media only screen and (max-width: $screen-small) {
+      height: 80%;
+      width: 90%;
+    } 
   }
 
   &__icon {
     height: 2.5rem;
     fill: $color-red-light;
+
+    @media only screen and (max-width: $screen-small) {
+      height: 1.5rem;
+    } 
   }
 
   &__date {
@@ -71,6 +84,10 @@
     text-align: center;
     line-height: 2.5rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $screen-small) {
+      line-height: 1.5rem;
+    }
   }
 
   .cta {
