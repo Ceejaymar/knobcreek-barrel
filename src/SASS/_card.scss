@@ -2,12 +2,35 @@
   width: 31%;
   margin-bottom: 6rem;
   
-  &__img {
-    // height: 45rem;
-    // background-position: 
+  &:hover,
+  &:hover > &__content,
+  &:hover > &__content > &__icon-circle {
+    background-color: $color-gray;
+    color: $color-white;
+    cursor: pointer;
+  } 
 
-    @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: $screen-small) {
+    width: 47%;
+    margin-bottom: 4rem;
+  } 
+
+  &__img {
+    
+    &:hover {
+      background-image: black !important;
+    }
+
+    @media only screen and (max-width: $screen-xlarge) {
       background-size: cover !important;
+    } 
+
+    @media only screen and (max-width: $screen-large) {
+      height: 35rem !important;
+    }
+
+    @media only screen and (max-width: $screen-medium) {
+      height: 25rem !important;
     } 
   }
 
@@ -18,7 +41,26 @@
     align-items: center;
     height: 25rem;
     background-color: $color-tan-light;
-    padding: 0 4rem 1.5rem 4rem;
+    padding: 2rem 4rem 1.5rem 4rem;
+    position: relative;
+    transition: .3s ease-out;
+
+    @media only screen and (max-width: $screen-xlarge) {
+      padding: 3rem 2rem 1.5rem 2rem;
+    }
+
+    @media only screen and (max-width: $screen-medium) {
+      height: 20rem;
+    } 
+  }
+
+  &__icon-circle {
+    background-color: $color-tan-light;
+    padding: 1.5rem;
+    border-radius: 100%;
+    position: absolute;
+    top: -2.5rem;
+    transition: .3s ease-out;
   }
 
   &__icon {
@@ -44,10 +86,5 @@
     font-size: 1.6rem;
     text-transform: capitalize;
     color: $color-red-light;
-
-    &:hover {
-      cursor: pointer;
-      color: $color-red-dark;
-    }
   }
 }

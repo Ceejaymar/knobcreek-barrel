@@ -2,9 +2,26 @@
   display: flex;
   height: 100%;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: $screen-small) {
+    flex-direction: column;
+  } 
+
+  &:hover .cta {
+    color: $color-red-dark;
+  }
+
   &__img,
   &__content {
-    width: 50%
+    width: 50%;
+
+    @media only screen and (max-width: $screen-small) {
+      height: 50%;
+      width: 100%;
+    } 
   }
 
   &__img {
@@ -61,10 +78,6 @@
     font-size: 1.6rem;
     text-transform: capitalize;
     color: $color-red-light;
-
-    &:hover {
-      cursor: pointer;
-      color: $color-red-dark;
-    }
+    transition: .3s ease-out;
   }
 }

@@ -5,7 +5,19 @@
 }
 
 .header-container {
-  height: 140vh;
+  height: 120vh;
+
+  @media only screen and (max-width: $screen-large) {
+    height: 90vh;
+  } 
+
+  @media only screen and (max-width: $screen-medium) {
+    height: 60vh;
+  } 
+
+  @media only screen and (max-width: $screen-small) {
+    // height: 50vh;
+  } 
 }
 
 .sub-section {
@@ -14,6 +26,18 @@
   display: flex;
   justify-content: center;
   position: relative;
+
+  @media only screen and (max-width: $screen-large) {
+    height: 30vh;
+  } 
+
+  @media only screen and (max-width: $screen-medium) {
+    height: 20vh;
+  }
+
+  @media only screen and (max-width: $screen-small) {
+    height: 25vh;
+  } 
 }
 
 .headercard-section {
@@ -21,12 +45,47 @@
   top: -30rem;
   width: 90%;
   height: 60vh;
-  background-color: $color-red-light;
+
+  @media only screen and (max-width: $screen-large) {
+    height: 40vh;
+    top: -20rem;
+  } 
+
+  @media only screen and (max-width: $screen-medium) {
+    height: 30vh;
+    top: -15rem;
+  }
+
+  @media only screen and (max-width: $screen-medium) {
+    height: 30vh;
+    width: 75%;
+  }
+
+  @media only screen and (max-width: $screen-small) {
+    height: 35vh;
+    width: 75%;
+    // top: -10rem;
+  } 
 }
 
 .cards-section {
-  // height: 100vh;
-  padding: 0 9rem;
+  padding: 5rem 9rem;
+
+  @media only screen and (max-width: $screen-xlarge) {
+    padding: 4rem 4rem;
+  }
+
+  @media only screen and (max-width: $screen-large) {
+    padding: 0 4rem;
+  }
+
+  @media only screen and (max-width: $screen-medium) {
+    padding: 7rem 4rem;
+  }
+
+  @media only screen and (max-width: $screen-small) {
+    padding: 25rem 4rem 4rem 4rem;
+  } 
 }
 
 .footer-container {
