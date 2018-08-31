@@ -8,7 +8,7 @@ const Card = ({ cardInfo }) => {
 
   const imgStyle = {
     height: "45rem",
-    backgroundImage: "url(" + image + ")",
+    backgroundImage: `url(${ image })`,
     backgroundPosition: `${ psInfo }`,
     backgroundSize: `${ bgInfo }`,
   };
@@ -17,7 +17,9 @@ const Card = ({ cardInfo }) => {
     <div className="card"> 
       <div style={imgStyle} className="card__img"></div>
       <div className="card__content">
-        <img className="card__icon" src={ icon } alt="article"/>
+        <div className="card__icon-circle">
+          <img className="card__icon" src={ icon } alt="article"/>
+        </div> 
         <p className="card__date">{ date }</p>
         <h2 className="card__title">{ title}</h2>
         <p className="cta">{ cta }</p>
